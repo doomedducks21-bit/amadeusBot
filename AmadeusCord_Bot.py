@@ -25,7 +25,7 @@ async def on_ready():
 @bot.hybrid_command(name="ban",description="ban a user")
 
 async def banuser(ctx,user : discord.User):
-    await discord.Member.ban(user)
+    await discord.Guild.ban(user)
     await ctx.send(f"{user} has been banned from AmadeusCord. One less person for Niven to rape🙄")
 @commands.cooldown(1,900,commands.BucketType.user)
 @bot.hybrid_command(name="rape",description="Rape a user")
