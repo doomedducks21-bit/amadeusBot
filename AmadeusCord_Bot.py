@@ -1,4 +1,4 @@
-from dis import disco
+
 from random import Random
 import discord
 from discord.ext import commands
